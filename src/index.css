@@ -1,0 +1,69 @@
+:root {
+  /* Axians brand */
+  --ax-red: #e6007e;
+  --ax-red-dark: #b3005f;
+  --ax-red-soft: #f25cae;
+  --ax-red-faint: #fce6f2;
+  --ax-charcoal: #2b2f36;
+  --ax-blue: #1d3b8a;
+  --ax-ink: #111317;
+
+  /* Neutrals */
+  --ax-bg: #f4f5f7;
+  --ax-surface: #ffffff;
+  --ax-border: #e7e9ee;
+  --ax-muted: #6b7280;
+  --ax-text: #1f2430;
+
+  /* Feedback */
+  --ax-positive: #1f9d55;
+  --ax-negative: #e6007e;
+
+  --ax-radius: 16px;
+  --ax-radius-sm: 10px;
+  --ax-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 10px 28px rgba(16, 24, 40, 0.06);
+  --ax-shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--ax-text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  background: var(--ax-bg);
+  color: var(--ax-text);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--ax-red);
+  outline-offset: 2px;
+}

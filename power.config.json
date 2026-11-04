@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "appId": "e73224df-e55c-4479-aaa4-a7d12efb2b00",
+  "appDisplayName": "Axians Cost Dashboard",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "b77ce512-615d-ec27-a2b1-f8cc441af254",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "57827afc-6181-49d3-babc-4882f5f02caf": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_webcontents",
+      "displayName": "HTTP with Microsoft Entra ID (preauthorized)",
+      "dataSources": [
+        "webcontents"
+      ],
+      "authenticationType": "EntraAuth",
+      "sharedConnectionId": "/providers/Microsoft.PowerApps/apis/shared_webcontents/connections/5d1383757e004139948f89dda4b89488",
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "annualbudgets": {
+          "entitySetName": "mzaxians_annualbudgets",
+          "logicalName": "mzaxians_annualbudget",
+          "isHidden": false
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}
